@@ -8,5 +8,6 @@ exclude:
   - QA-VALIDATION-REPORT.md
   - SEO-LAUNCH-CHECKLIST.md
   - FORM-CONFIGURATION.md
+  - DEPLOYMENT-NOTES.md
   - scripts
 strict_front_matter: true
