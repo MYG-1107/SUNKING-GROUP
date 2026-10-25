@@ -1,0 +1,12 @@
+title: SUNKING GROUP
+url: "https://sunkinggroup.org"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - QA-VALIDATION-REPORT.md
+  - SEO-LAUNCH-CHECKLIST.md
+  - FORM-CONFIGURATION.md
+  - scripts
+strict_front_matter: true

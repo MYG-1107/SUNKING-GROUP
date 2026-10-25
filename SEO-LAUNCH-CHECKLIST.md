@@ -42,3 +42,8 @@
 - [ ] Notification and data retention are verified.
 - [ ] Privacy notice is updated to identify the form service and data handling.
 - [ ] No unapproved email address or phone number is added.
+
+- [ ] Keep `/sunkinggrouplogo.png` at repository root; it is referenced throughout the shared header/footer and metadata.
+- [ ] Delete the old `.nojekyll` file from repository root so GitHub Pages processes `_includes` and Liquid.
+- [ ] Confirm the latest Pages build succeeds; inspect rendered source and verify `{% include ... %}` text is not visible.
+- [ ] Make global header changes in `_includes/header.html` and global footer changes in `_includes/footer.html` only.

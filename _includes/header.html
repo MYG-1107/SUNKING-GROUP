@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="SUNKING GROUP home">
+      <img class="brand-logo" src="/sunkinggrouplogo.png" alt="SUNKING GROUP" fetchpriority="high">
+    </a>
+    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+      <span aria-hidden="true">☰</span><span class="menu-toggle-label">Menu</span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
+      <a href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+      <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a href="/education/"{% if page.url == '/education/' %} aria-current="page"{% endif %}>Education</a>
+      <a href="/programmes/"{% if page.url contains '/programmes/' %} aria-current="page"{% endif %}>Programmes</a>
+      <a href="/training/"{% if page.url == '/training/' %} aria-current="page"{% endif %}>Training</a>
+      <a href="/consulting/"{% if page.url == '/consulting/' %} aria-current="page"{% endif %}>Consulting</a>
+      <a href="/leadership/"{% if page.url == '/leadership/' %} aria-current="page"{% endif %}>Leadership</a>
+      <a class="nav-cta" href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact us <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>

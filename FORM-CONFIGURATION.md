@@ -13,3 +13,7 @@ The site is static and does not include a server-side form handler. To keep the 
 7. Commit the changes and re-check the live contact page. The form status message must confirm success only after the endpoint responds successfully.
 
 Until those steps are complete, the form will display a clear message that online submission is not yet connected. This is intentional; the live site should not imply a message was delivered when it was not.
+
+
+## Shared site chrome
+The header and footer are maintained in `_includes/header.html` and `_includes/footer.html`. GitHub Pages/Jekyll renders them into each page on deployment.

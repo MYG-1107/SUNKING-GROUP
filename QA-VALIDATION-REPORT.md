@@ -24,3 +24,12 @@ The refined package reorganises the public-facing content into clean, user-frien
 - The profile photo and unverified testimonials were not copied into the new site; use approved assets and verified testimonials only. Numerical marketing claims that could not be independently confirmed were not republished as facts.
 - Privacy and Terms pages are drafts requiring management/legal approval.
 - Search ranking and indexing cannot be guaranteed by source files alone. Verify the domain and submit the sitemap in Google Search Console after HTTPS and deployment have been confirmed.
+
+
+## Shared header/footer update
+
+- Added `_includes/header.html` and `_includes/footer.html` as single maintenance points shared across the main page templates.
+- Added `_config.yml` and front matter on all rendered pages so GitHub Pages/Jekyll expands those includes.
+- Removed `.nojekyll` from the package; delete the old root `.nojekyll` from the existing repository if it remains.
+- Repointed the header, footer, homepage artwork, favicon, Apple touch icon and social preview metadata to `/sunkinggrouplogo.png`. The logo binary was already present in the current repository and is intentionally referenced in place rather than duplicated in this ZIP.
+- Live deployment needs to be checked after commit; local source validation cannot prove GitHub Pages has completed a successful rebuild.
