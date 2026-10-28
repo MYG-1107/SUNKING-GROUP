@@ -1,19 +1,20 @@
-# Contact form configuration
+# Contact form configuration and behaviour
 
-The site is static and does not include a server-side form handler. To keep the public site free of unapproved mailbox addresses and avoid pretending a form works when it does not, the form is intentionally unconnected by default.
+## Current behaviour
 
-## Before enabling it
+The website is hosted as a static GitHub Pages site, so it cannot process submissions on its own. The contact page now validates the required fields and opens a pre-addressed email draft to `contact@sunkinggroup.org` through the visitor’s default email application. The visitor must review and press Send; the site does not claim the message has been delivered automatically.
 
-1. Get approval from the manager for a form provider or the organisation's own backend.
-2. Create an HTTPS form endpoint with that provider and configure notifications and spam protection. Do not publish a personal or unapproved email address in the site source.
-3. Open `assets/site.js` and replace the empty `FORM_ENDPOINT` constant with the provider-issued HTTPS endpoint.
-4. Check that the endpoint accepts the fields `name`, `email`, `phone`, `interest`, `message` and the optional `website` honeypot.
-5. Submit a test enquiry and verify the notification reaches the authorised team. Test invalid fields, network failure, spam handling and mobile browsers.
-6. Update `privacy/index.html` with the provider's name, data processing purpose, retention and any required consent text. Have the organisation approve the final notice.
-7. Commit the changes and re-check the live contact page. The form status message must confirm success only after the endpoint responds successfully.
+The shared footer and the contact, privacy, and terms pages display the approved mailbox. The Organization structured data on the contact, privacy and terms pages also includes this email address.
 
-Until those steps are complete, the form will display a clear message that online submission is not yet connected. This is intentional; the live site should not imply a message was delivered when it was not.
+## Testing checklist
 
+1. Open `/contact/` on desktop and mobile.
+2. Submit with missing required fields; browser validation should stop the attempt.
+3. Fill in a valid name, email, interest and message, then click **Send enquiry**.
+4. Confirm the email application opens a draft addressed to `contact@sunkinggroup.org` and includes the submitted values in the body.
+5. Confirm the visitor can still use the direct `mailto:contact@sunkinggroup.org` link if no email application opens.
+6. Verify that a real message reaches the mailbox. A mailto link alone cannot verify delivery, and a user may have no email application configured.
 
-## Shared site chrome
-The header and footer are maintained in `_includes/header.html` and `_includes/footer.html`. GitHub Pages/Jekyll renders them into each page on deployment.
+## If you later need direct web submissions
+
+Connect an approved HTTPS form service or backend. Configure spam prevention, notifications, retention, error states and privacy disclosures before enabling it. Update `assets/site.js` and `privacy/index.html` together. Never display a success state until the service confirms the submission.

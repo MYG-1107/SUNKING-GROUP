@@ -23,34 +23,40 @@
   const year = document.querySelector('[data-year]');
   if(year) year.textContent = String(new Date().getFullYear());
 
-  /* Configure this to a real, approved HTTPS form endpoint before enabling online submissions. */
-  const FORM_ENDPOINT = '';
+  /* GitHub Pages is static, so the form creates an email draft instead of pretending to submit to a server. */
+  const FORM_RECIPIENT = 'contact@sunkinggroup.org';
   const form = document.querySelector('#contact-form');
   if(form){
     const status = document.querySelector('#form-status');
-    const submit = form.querySelector('[type="submit"]');
-    form.addEventListener('submit',async function(event){
+    form.addEventListener('submit',function(event){
       event.preventDefault();
       if(!form.reportValidity()) return;
-      if(!FORM_ENDPOINT){
-        if(status){
-          status.classList.add('error');
-          status.textContent='Online submission is not connected yet. The site administrator needs to configure the approved enquiry form service before messages can be sent.';
-        }
+      const data = new FormData(form);
+      // Honeypot: silently stop bot-filled submissions.
+      if(String(data.get('website') || '').trim()){
+        if(status){status.classList.add('error');status.textContent='Unable to prepare this enquiry. Please reload the page and try again.';}
         return;
       }
-      if(submit){submit.disabled=true;submit.setAttribute('aria-busy','true');submit.textContent='Sending…';}
-      if(status){status.classList.remove('error');status.textContent='Sending your enquiry…';}
-      try{
-        const response=await fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
-        if(!response.ok) throw new Error('Form endpoint returned '+response.status);
-        form.reset();
-        if(status) status.textContent='Thank you. Your enquiry has been submitted.';
-      }catch(error){
-        if(status){status.classList.add('error');status.textContent='We could not submit your enquiry. Please try again later or contact the group through its approved contact channel.';}
-      }finally{
-        if(submit){submit.disabled=false;submit.removeAttribute('aria-busy');submit.innerHTML='Send enquiry <span aria-hidden="true">→</span>';}
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const phone = String(data.get('phone') || '').trim();
+      const interest = String(data.get('interest') || 'General enquiry').trim();
+      const message = String(data.get('message') || '').trim();
+      const subject = encodeURIComponent('SUNKING GROUP enquiry: ' + interest);
+      const body = encodeURIComponent(
+        'Hello SUNKING GROUP,\n\n' +
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + (phone || 'Not provided') + '\n' +
+        'Area of interest: ' + interest + '\n\n' +
+        'Message:\n' + message + '\n\n' +
+        'Sent from https://sunkinggroup.org/contact/.'
+      );
+      if(status){
+        status.classList.remove('error');
+        status.textContent='Opening your email application. Review the draft and press Send to deliver it. If it does not open, email contact@sunkinggroup.org directly.';
       }
+      window.location.href = 'mailto:' + FORM_RECIPIENT + '?subject=' + subject + '&body=' + body;
     });
   }
 })();
