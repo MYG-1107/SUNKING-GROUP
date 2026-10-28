@@ -26,3 +26,11 @@
 
 /* Override legacy square-logo sizing so the uploaded brand image keeps its natural ratio. */
 .site-header .brand img.brand-logo, .site-footer .brand img.brand-logo { width: auto; height: auto; flex: 0 1 auto; }
+
+
+/* Leadership portrait and founder quotation */
+.leader-photo{display:block;width:min(100%,260px);height:346px;object-fit:cover;object-position:center 22%;margin:0 auto 18px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+.leader-quote{margin:36px 0 0;padding:clamp(20px,3.5vw,30px);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;background:var(--paper)}
+.leader-quote blockquote{margin:0;color:var(--green);font-size:clamp(1.08rem,1.7vw,1.32rem);font-weight:680;line-height:1.68;letter-spacing:-.01em}
+.leader-quote figcaption{margin-top:15px;color:var(--muted);font-size:.92rem;font-weight:760;text-align:right}
+@media(max-width:640px){.leader-photo{width:min(100%,230px);height:300px}.leader-quote{margin-top:28px;padding:20px}.leader-quote figcaption{text-align:left}}
