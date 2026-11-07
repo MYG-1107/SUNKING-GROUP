@@ -12,10 +12,13 @@
 ## SEO
 - [ ] Every indexable page has a unique title and meta description.
 - [ ] Every indexable page has a self-referencing canonical URL.
-- [ ] JSON-LD parses and uses the current group brand and domain.
+- [ ] JSON-LD parses and uses the current group brand, domain and approved organisation logo.
+- [ ] Open Graph image points to the 1200 × 630 `assets/og-image.png`; the favicon and organisation logo point to `sunkinggrouplogo.png`.
 - [ ] Open Graph/Twitter metadata uses the local 1200 × 630 social image.
 - [ ] No unintended `noindex`, stale hostnames or duplicate canonical paths.
 - [ ] Google Search Console is verified and the sitemap is submitted.
+- [ ] Google Tag Assistant detects container `GTM-PV8P6DSV` on the homepage and key pages.
+- [ ] The intended GA4/Google Analytics tag is configured and published in the GTM workspace; a GTM container ID by itself does not prove Analytics is collecting data.
 - [ ] Inspect key URLs and monitor indexing/crawl reports over time.
 
 ## Brand and content
@@ -25,7 +28,7 @@
 - [ ] Programme listings, duration, recognition/accreditation, awarding body, fees and admission requirements are confirmed in writing.
 - [ ] Leadership profile details, memberships, awards, patent references and external profile links are current and approved.
 - [ ] No unverifiable testimonial or numerical marketing claim is published as fact.
-- [ ] Privacy and Terms pages have legal/management approval.
+- [ ] Privacy and Terms pages have legal/management approval, including review of GTM/Analytics data collection and applicable consent requirements.
 
 ## UX and accessibility
 - [ ] Test mobile widths around 360px, 390px, 768px and desktop widths.
@@ -44,6 +47,6 @@
 - [ ] No unapproved email address or phone number is added.
 
 - [ ] Keep `/sunkinggrouplogo.png` at repository root; it is referenced throughout the shared header/footer and metadata.
-- [ ] Delete the old `.nojekyll` file from repository root so GitHub Pages processes `_includes` and Liquid.
+- [ ] Keep `.nojekyll` absent so GitHub Pages processes `_includes` and Liquid.
 - [ ] Confirm the latest Pages build succeeds; inspect rendered source and verify `{% include ... %}` text is not visible.
-- [ ] Make global header changes in `_includes/header.html` and global footer changes in `_includes/footer.html` only.
+- [ ] Make global header changes in `_includes/header.html`, global footer changes in `_includes/footer.html`, and analytics snippet changes in `_includes/google-tag.html`.

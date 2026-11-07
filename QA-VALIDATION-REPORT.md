@@ -16,10 +16,19 @@ The refined package reorganises the public-facing content into clean, user-frien
 - `404.html` is marked `noindex` and excluded from the sitemap. Legacy `.html` files are `noindex` redirects to clean paths.
 - Social preview artwork and logo are self-hosted in the repository.
 
+## Shared includes and analytics update
+
+- Every canonical content page and the custom 404 page references the same `_includes/header.html` and `_includes/footer.html`; there are no duplicated page-specific navigation/footer blocks in those page templates.
+- Every canonical content page and the 404 page references `_includes/google-tag.html` once inside `<head>`. That include contains the supplied Google tag code for container `GTM-PV8P6DSV`.
+- The Open Graph and Twitter cards use the repository's 1200 × 630 `assets/og-image.png`; the site favicon and Organization structured-data logo continue to use `/sunkinggrouplogo.png`.
+- The privacy notice now identifies the GTM container and explains that the data actually collected depends on the tags configured and published within Tag Manager.
+- Legacy `.html` files are intentionally small, `noindex` redirects to canonical directory URLs; they are not separate content pages and do not carry their own navigation/footer.
+- `.nojekyll` is absent, allowing GitHub Pages/Jekyll to process Liquid includes.
 ## Human review still required
 
-- The site should be tested in real mobile and desktop browsers after deployment; this package has not been tested across physical devices.
-- The online form endpoint is intentionally not configured. See `FORM-CONFIGURATION.md`.
+- The site should be tested in real mobile and desktop browsers after deployment; this repository review is not a substitute for physical-device testing.
+- Verify `GTM-PV8P6DSV` with Google Tag Assistant. Confirm a GA4 tag is configured and published inside the Tag Manager container before expecting GA4 events.
+- The contact route opens a pre-addressed email draft to `contact@sunkinggroup.org`; the visitor must send it. This is not a server-side submission service.
 - Management should verify the current programme availability, awarding institution, duration, fees, entry rules, recognition/accreditation statements, external affiliations, legal entity details and current leadership credentials before publication.
 - The profile photo and unverified testimonials were not copied into the new site; use approved assets and verified testimonials only. Numerical marketing claims that could not be independently confirmed were not republished as facts.
 - Privacy and Terms pages are drafts requiring management/legal approval.
