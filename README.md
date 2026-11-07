@@ -1,6 +1,6 @@
 # SUNKING GROUP website — `sunkinggroup.org`
 
-A responsive multi-page static website built for GitHub Pages. It reorganises education, research, training, consulting, leadership and programme information under the **SUNKING GROUP** name.
+
 
 ## What's included
 
