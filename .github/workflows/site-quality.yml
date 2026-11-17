@@ -24,6 +24,9 @@ jobs:
       - name: Install the GitHub Pages-compatible Jekyll version
         run: gem install jekyll -v 3.10.0 --no-document
 
+      - name: Install the configured GFM Markdown parser
+        run: gem install kramdown-parser-gfm --no-document
+
       - name: Build the Jekyll site
         run: jekyll build --trace
 
