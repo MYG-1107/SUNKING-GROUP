@@ -18,7 +18,7 @@
       toggle.innerHTML=open?'<span aria-hidden="true">✕</span><span class="menu-toggle-label">Close</span>':'<span aria-hidden="true">☰</span><span class="menu-toggle-label">Menu</span>';
       if(open){
         const firstLink=nav.querySelector('a');
-        if(firstLink && window.matchMedia('(max-width: 980px)').matches) firstLink.focus();
+        if(firstLink && window.matchMedia('(max-width: 1080px)').matches) firstLink.focus();
       }
     });
     nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){closeMenu(false);});});
