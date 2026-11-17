@@ -1,0 +1,36 @@
+name: Site quality checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: false
+
+      - name: Install the GitHub Pages-compatible Jekyll version
+        run: gem install jekyll -v 3.10.0 --no-document
+
+      - name: Build the Jekyll site
+        run: jekyll build --trace
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Audit generated pages and local links
+        run: python scripts/audit_site.py _site
