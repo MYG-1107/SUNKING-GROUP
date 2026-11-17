@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sunkinggroup.org/</loc></url>
   <url><loc>https://sunkinggroup.org/about/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/history/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/organisation/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/global-presence/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/team/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/advisory-board/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/partners/</loc></url>
+  <url><loc>https://sunkinggroup.org/about/recognition/</loc></url>
   <url><loc>https://sunkinggroup.org/education/</loc></url>
   <url><loc>https://sunkinggroup.org/programmes/</loc></url>
   <url><loc>https://sunkinggroup.org/programmes/ssbm-dba/</loc></url>
@@ -10,14 +17,27 @@
   <url><loc>https://sunkinggroup.org/programmes/postgraduate-pathways/</loc></url>
   <url><loc>https://sunkinggroup.org/programmes/certificates-diplomas/</loc></url>
   <url><loc>https://sunkinggroup.org/programmes/research-pathways/</loc></url>
+  <url><loc>https://sunkinggroup.org/admissions/</loc></url>
+  <url><loc>https://sunkinggroup.org/fees-and-payment/</loc></url>
+  <url><loc>https://sunkinggroup.org/scholarships/</loc></url>
+  <url><loc>https://sunkinggroup.org/academic-regulations/</loc></url>
+  <url><loc>https://sunkinggroup.org/student-support/</loc></url>
+  <url><loc>https://sunkinggroup.org/research-support/</loc></url>
+  <url><loc>https://sunkinggroup.org/faqs/</loc></url>
   <url><loc>https://sunkinggroup.org/training/</loc></url>
   <url><loc>https://sunkinggroup.org/training/leadership-development/</loc></url>
   <url><loc>https://sunkinggroup.org/training/communication-workplace/</loc></url>
   <url><loc>https://sunkinggroup.org/training/team-performance-change/</loc></url>
+  <url><loc>https://sunkinggroup.org/training/corporate-solutions/</loc></url>
+  <url><loc>https://sunkinggroup.org/training/calendar/</loc></url>
+  <url><loc>https://sunkinggroup.org/events/</loc></url>
   <url><loc>https://sunkinggroup.org/consulting/</loc></url>
   <url><loc>https://sunkinggroup.org/consulting/business-management/</loc></url>
   <url><loc>https://sunkinggroup.org/consulting/people-hr/</loc></url>
   <url><loc>https://sunkinggroup.org/consulting/education-research/</loc></url>
+  <url><loc>https://sunkinggroup.org/consulting/process/</loc></url>
+  <url><loc>https://sunkinggroup.org/consulting/industry-solutions/</loc></url>
+  <url><loc>https://sunkinggroup.org/consulting/project-portfolio/</loc></url>
   <url><loc>https://sunkinggroup.org/leadership/</loc></url>
   <url><loc>https://sunkinggroup.org/insights/</loc></url>
   <url><loc>https://sunkinggroup.org/insights/experiential-learning-at-work/</loc></url>
@@ -26,6 +46,16 @@
   <url><loc>https://sunkinggroup.org/insights/responsible-research-publication/</loc></url>
   <url><loc>https://sunkinggroup.org/stories/</loc></url>
   <url><loc>https://sunkinggroup.org/contact/</loc></url>
+  <url><loc>https://sunkinggroup.org/information/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/quality-assurance/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/academic-integrity/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/complaints/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/refunds/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/equal-opportunity/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/code-of-conduct/</loc></url>
+  <url><loc>https://sunkinggroup.org/governance/conflict-of-interest/</loc></url>
+  <url><loc>https://sunkinggroup.org/accessibility/</loc></url>
+  <url><loc>https://sunkinggroup.org/cookies/</loc></url>
   <url><loc>https://sunkinggroup.org/privacy/</loc></url>
   <url><loc>https://sunkinggroup.org/terms/</loc></url>
 </urlset>
