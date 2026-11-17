@@ -34,3 +34,22 @@
 .leader-quote blockquote{margin:0;color:var(--green);font-size:clamp(1.08rem,1.7vw,1.32rem);font-weight:680;line-height:1.68;letter-spacing:-.01em}
 .leader-quote figcaption{margin-top:15px;color:var(--muted);font-size:.92rem;font-weight:760;text-align:right}
 @media(max-width:640px){.leader-photo{width:min(100%,230px);height:300px}.leader-quote{margin-top:28px;padding:20px}.leader-quote figcaption{text-align:left}}
+
+/* New editorial and detailed service-page components */
+.article-meta{margin:0 0 22px;color:var(--muted);font-size:.88rem;font-weight:650}
+.content-prose{max-width:78ch}
+.content-prose table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:18px 0 26px;font-size:.94rem}
+.content-prose th,.content-prose td{padding:12px 14px;border:1px solid var(--line);text-align:left;vertical-align:top;min-width:130px}
+.content-prose th{background:var(--soft);color:var(--green);font-weight:760}
+.content-prose td{color:#46584f;background:#fff}
+.content-cta{margin-top:42px}
+@media(max-width:680px){.content-cta{margin-top:30px}.content-prose table{font-size:.88rem}}
+
+/* Keep the expanded primary navigation usable with the additional Insights link. */
+@media (max-width: 1080px) {
+  .menu-toggle { display: inline-flex; align-items: center; gap: 8px; }
+  .nav { display: none; position: absolute; inset: calc(100% + 1px) 0 auto; padding: 12px 20px 20px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px rgba(23,61,53,.08); flex-direction: column; align-items: stretch; gap: 3px; }
+  .nav.is-open { display: flex; }
+  .nav a { justify-content: flex-start; padding: 11px 13px; }
+  .nav .nav-cta { margin: 5px 0 0; justify-content: center; }
+}
