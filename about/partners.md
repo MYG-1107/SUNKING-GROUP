@@ -13,7 +13,7 @@ notice: "A complete, evidence-backed partner directory and copies of current par
 cta_title: "Need to verify a partnership?"
 cta_text: "Ask for the current agreement or official confirmation from the institution concerned."
 cta_url: /contact/
-cta_label Request clarification
+cta_label: Request clarification
 ---
 ## How to read partnership information
 
