@@ -13,7 +13,7 @@ notice: "This website does not publish a verified institutional accreditation re
 cta_title: "Before you enrol, verify the qualification"
 cta_text: "Ask for the awarding institution, exact qualification title and current official recognition evidence."
 cta_url: /contact/
-cta_label Ask for programme documents
+cta_label: Ask for programme documents
 ---
 ## What should be verified?
 
