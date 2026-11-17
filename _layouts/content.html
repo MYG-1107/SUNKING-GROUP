@@ -94,9 +94,13 @@
         <h1>{{ page.page_heading | default: page.title | escape }}</h1>
         <p>{{ page.summary | escape }}</p>
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a><span aria-hidden="true">/</span>
-{% if page.url == page.section_url %}<span>{{ page.section_title | escape }}</span>{% else %}<a href="{{ page.section_url }}">{{ page.section_title | escape }}</a>{% endif %}
+          <a href="/">Home</a>
+          {% if page.url == page.section_url %}
+          <span aria-hidden="true">/</span><span aria-current="page">{{ page.breadcrumb_label | default: page.section_title | escape }}</span>
+          {% else %}
+          <span aria-hidden="true">/</span><a href="{{ page.section_url }}">{{ page.section_title | escape }}</a>
           <span aria-hidden="true">/</span><span aria-current="page">{{ page.breadcrumb_label | default: page.page_heading | default: page.title | escape }}</span>
+          {% endif %}
         </nav>
       </div>
     </section>
