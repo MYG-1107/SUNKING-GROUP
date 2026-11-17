@@ -56,10 +56,11 @@ class PageParser(HTMLParser):
             self.links.append(a["src"] or "")
         elif tag == "img" and "alt" not in a:
             self.images_missing_alt.append(a.get("src") or "(unknown image)")
-        elif tag == "nav" and a.get("aria-label"):
-            self.nav_labels += 1
-        elif tag == "nav" and a.get("id") == "primary-navigation":
-            self.has_primary_nav = True
+        elif tag == "nav":
+            if a.get("aria-label"):
+                self.nav_labels += 1
+            if a.get("id") == "primary-navigation":
+                self.has_primary_nav = True
         elif tag == "button" and "menu-toggle" in (a.get("class") or "").split():
             self.has_menu_button = True
         elif tag == "script" and a.get("type") == "application/ld+json":
@@ -143,6 +144,9 @@ def main() -> int:
         parser.feed(source)
         page_parsers[file.resolve()] = parser
         rel = file.relative_to(root)
+        # Google Search Console's HTML verification token is intentionally a bare file.
+        if rel.as_posix() == "googlec26adc5a82f03703.html":
+            continue
         robots = " ".join(parser.meta.get("robots", [])).lower()
         is_legacy_redirect = "noindex" in robots and rel.name != "404.html"
 
