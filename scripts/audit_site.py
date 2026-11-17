@@ -50,6 +50,10 @@ class PageParser(HTMLParser):
                 self.meta.setdefault(key, []).append(a.get("content") or "")
         elif tag in {"a", "link"} and a.get("href"):
             self.links.append(a["href"] or "")
+            if tag == "link" and "canonical" in (a.get("rel") or "").lower().split():
+                self.meta.setdefault("canonical", []).append(a["href"] or "")
+        elif tag in {"img", "script"} and a.get("src"):
+            self.links.append(a["src"] or "")
         elif tag == "img" and "alt" not in a:
             self.images_missing_alt.append(a.get("src") or "(unknown image)")
         elif tag == "nav" and a.get("aria-label"):
@@ -164,7 +168,7 @@ def main() -> int:
 
         if parser.h1_count != 1:
             fail(f"{rel}: expected exactly one H1, found {parser.h1_count}")
-        if "GTM-PV8P6DSV" not in source or parser.gtm_mentions < 2:
+        if source.count(GTM_ID) < 2:
             fail(f"{rel}: expected GTM script and no-script iframe")
         if not parser.has_primary_nav or not parser.has_menu_button:
             fail(f"{rel}: shared navigation or mobile menu toggle is missing")
