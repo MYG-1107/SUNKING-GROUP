@@ -12,7 +12,7 @@ summary: "We help prospective learners understand the questions to ask before ap
 cta_title: "Discuss your intended programme"
 cta_text: "Tell us your previous qualification, subject interest and preferred study format."
 cta_url: /contact/?interest=Education%20and%20programmes&intent=registration
-cta_label Enquire about admission
+cta_label: Enquire about admission
 ---
 ## Before you apply
 
