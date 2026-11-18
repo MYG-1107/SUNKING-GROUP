@@ -12,7 +12,7 @@ summary: "SUNKING GROUP is a Business Partner of the Swiss School of Business an
 cta_title: "Explore programmes with SSBM Geneva"
 cta_text: "Review the current programme categories and official admissions process before choosing a course."
 cta_url: /programmes/ssbm-geneva/
-cta_label View SSBM programmes
+cta_label: View SSBM programmes
 ---
 ## Swiss School of Business and Management Geneva
 
