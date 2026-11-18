@@ -12,7 +12,7 @@ summary: "The full cost depends on the programme, provider, study format and int
 cta_title: "Need help understanding a fee schedule?"
 cta_text: "Share the programme name and the question you need clarified. Do not send payment details through the enquiry form."
 cta_url: /contact/?interest=Education%20and%20programmes&intent=registration
-cta_label Ask about programme fees
+cta_label: Ask about programme fees
 ---
 ## SSBM Geneva tuition fees
 
