@@ -36,7 +36,7 @@ A verified current fee table is not published here. Request a dated fee schedule
 
 No scholarship or funded place is guaranteed by this general information page. Ask the programme provider whether current funding is available and request its eligibility and award terms in writing.
 
-## Training and consulting
+### Is SUNKING GROUP a Business Partner of SSBM Geneva?\n\nYes. SUNKING GROUP is a Business Partner of the Swiss School of Business and Management Geneva (SSBM Geneva). You can explore its current programme categories on the [SSBM Geneva programmes page](/programmes/ssbm-geneva/). Applications and admission decisions are handled through SSBM Geneva's official process.\n\n### How do I apply to an SSBM Geneva programme?\n\nReview the programme-specific criteria and apply through the [SSBM Student Application System](https://apply.ssbm.ch/). For application questions, contact [admissions@ssbm.ch](mailto:admissions@ssbm.ch).\n\n## Training and consulting
 
 ### Can corporate training be customised?
 

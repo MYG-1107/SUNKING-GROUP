@@ -61,3 +61,9 @@ Publication, graduation, funding and career outcomes are not guaranteed.
 5. Apply to the university through its official doctoral or postdoctoral process.
 
 All research work must follow the relevant institution’s academic-integrity, ethics, authorship and data-protection policies. Support must not replace the candidate’s own intellectual contribution.
+
+## SSBM Geneva DBA and doctorate options
+
+SSBM Geneva lists several doctoral routes, including DBA programmes and related options. Requirements can differ according to the applicant's highest qualification, field of study and professional experience. The research proposal, supervision arrangements, dissertation or project requirements and examination method should be checked for the chosen route.
+
+Use the [SSBM programme finder](https://www.ssbm.ch/course-search/) to locate the current doctorate options, then request confirmation from [SSBM admissions](mailto:admissions@ssbm.ch). Applications are submitted through the [official Student Application System](https://apply.ssbm.ch/). SUNKING GROUP is a Business Partner of SSBM Geneva and can help prospective learners identify the programme information to review; it does not make academic admission or award decisions.

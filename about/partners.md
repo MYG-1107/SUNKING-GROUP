@@ -1,38 +1,37 @@
 ---
 layout: content
-title: "Partners and Affiliations | SUNKING GROUP"
-description: "Understand how to verify SUNKING GROUP institutional partnerships, programme-provider relationships, company affiliations and the exact responsibilities of each party."
-keywords: "SUNKING GROUP partners, university affiliations, institutional partnerships, programme providers"
+title: "Education and Business Partners | SUNKING GROUP"
+description: "Learn about SUNKING GROUP's Business Partner relationship with Swiss School of Business and Management Geneva and how programme responsibilities are handled."
+keywords: "SUNKING GROUP business partner, SSBM Geneva, education partnership, admissions guidance"
 permalink: /about/partners/
 section_title: About
 section_url: /about/
-eyebrow: Institutional relationships
-page_heading: "Partners and affiliations"
-summary: "A partnership should be described by its actual scope and documented responsibilities—not simply by a logo or an informal reference."
-notice: "A complete, evidence-backed partner directory and copies of current partnership agreements have not been supplied for publication."
-cta_title: "Need to verify a partnership?"
-cta_text: "Ask for the current agreement or official confirmation from the institution concerned."
-cta_url: /contact/
-cta_label: Request clarification
+eyebrow: Education partnership
+page_heading: "Our education partnership"
+summary: "SUNKING GROUP is a Business Partner of the Swiss School of Business and Management Geneva (SSBM Geneva)."
+cta_title: "Explore programmes with SSBM Geneva"
+cta_text: "Review the current programme categories and official admissions process before choosing a course."
+cta_url: /programmes/ssbm-geneva/
+cta_label: View SSBM programmes
 ---
-## How to read partnership information
+## Swiss School of Business and Management Geneva
 
-The term “partner” can describe different arrangements, including a referral relationship, marketing arrangement, service supplier, academic collaboration, delivery agreement or formal institutional partnership. These relationships are not interchangeable.
+SUNKING GROUP is a **Business Partner of the Swiss School of Business and Management Geneva (SSBM Geneva)**. The partnership gives prospective learners a SUNKING GROUP contact point when exploring SSBM Geneva's published programme opportunities.
 
-Before relying on a partnership claim, ask for:
+SSBM Geneva publishes its own programme catalogue, admission requirements, fee schedule and application process. Programme delivery, admission decisions, academic assessment and qualifications are handled by the institution in accordance with its own rules.
 
-- The exact legal names of the organisations involved.
-- The current status and effective period of the relationship.
-- The scope of the agreement and the activities each party is authorised to perform.
-- Which organisation admits learners, delivers teaching, assesses work and awards a qualification.
-- A current confirmation published by the institution itself, where possible.
+## Explore the programme options
 
-## University and qualification relationships
+The SSBM Geneva catalogue includes bachelor's, master's, MBA and DBA/doctorate routes, as well as other learning options such as an Ed.D., postdoctoral research programmes, certificates, diplomas and executive education. Online, campus and blended formats are listed for selected programmes.
 
-A reference to an external university or education provider does not mean that SUNKING GROUP is itself a university, accreditor or awarding body. Programme pages and enrolment documents should identify the awarding institution and explain SUNKING GROUP's role in that specific pathway.
+The availability of an individual course and delivery format should be checked on the official programme page. See the [SSBM Geneva programme and admissions guide](/programmes/ssbm-geneva/).
 
-## Public directory
+## Applying to SSBM Geneva
 
-A verified partner and affiliation directory will be published when the organisations, relationship type, current status and permission to use names or logos have been confirmed. No unverified university, company or professional body is named as a partner on this page.
+Applications are submitted through SSBM Geneva's official [Student Application System](https://apply.ssbm.ch/). Applicants should follow the current instructions and send programme-specific questions to [admissions@ssbm.ch](mailto:admissions@ssbm.ch).
 
-For a specific programme, request current official documents before paying a fee or submitting sensitive documents.
+SUNKING GROUP can help prospective learners understand the programme categories and prepare questions. A conversation with SUNKING GROUP does not constitute an application, admission offer or guarantee of eligibility.
+
+## Verify current details
+
+Before enrolling or making payment, request the official programme specification, awarding details, current fee schedule, study format, attendance requirements and refund terms. Use the [SSBM Geneva website](https://www.ssbm.ch/) as the authoritative source for current institutional information.

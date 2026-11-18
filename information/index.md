@@ -27,6 +27,7 @@ This information centre brings together the practical details that sit behind th
 
 ## Education and learner information
 
+- [SSBM Geneva programmes](/programmes/ssbm-geneva/) — programme categories, study formats and the official admissions route.
 - [Admissions](/admissions/) — enquiry, eligibility review and application steps.
 - [Fees and payment](/fees-and-payment/) and [scholarships](/scholarships/) — what to confirm in writing before paying.
 - [Academic regulations](/academic-regulations/) and [student support](/student-support/).

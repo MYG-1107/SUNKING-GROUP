@@ -51,3 +51,9 @@ A qualification does not guarantee employment, promotion or professional licensu
 ## Questions to ask before paying
 
 Request the current prospectus, programme regulations, complete fee schedule, refund and cancellation policy, academic calendar, contact details for the awarding institution and independent evidence of any accreditation or recognition claim. SUNKING GROUP can help route an enquiry; the final admission decision rests with the institution.
+
+## SSBM Geneva undergraduate options
+
+SSBM Geneva lists bachelor's-level programmes in its current catalogue. Subject availability and format can change, so start with the [official SSBM programme finder](https://www.ssbm.ch/course-search/) and check the current entry requirements. Its admissions overview describes accepted upper-secondary qualifications and English-language evidence for applicants who need it.
+
+SUNKING GROUP is a Business Partner of SSBM Geneva and can help you understand which information to review. Applications and admission decisions are handled by SSBM Geneva through its [Student Application System](https://apply.ssbm.ch/). Read the [SSBM Geneva programme and admissions guide](/programmes/ssbm-geneva/) before applying.
