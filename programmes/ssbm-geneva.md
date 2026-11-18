@@ -14,7 +14,7 @@ notice: "Programme names, entry requirements, fees, delivery formats and intake 
 cta_title: "Talk to SUNKING GROUP about an SSBM programme"
 cta_text: "Tell us your academic background, area of interest and preferred study format. We can help you understand which official programme information to review."
 cta_url: /contact/?interest=Education%20and%20programmes&intent=registration
-cta_label Request programme guidance
+cta_label: Request programme guidance
 ---
 ## Our partnership with SSBM Geneva
 
