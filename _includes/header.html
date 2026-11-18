@@ -2,22 +2,53 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="SUNKING GROUP home">
-      <img class="brand-logo" src="/sunkinggrouplogo.png" alt="SUNKING GROUP logo" width="1024" height="1024" fetchpriority="high">
+      <img class="brand-logo" src="/sunkinggrouplogo.png" alt="SUNKING GROUP" width="1024" height="1024" fetchpriority="high">
     </a>
     <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
       <span aria-hidden="true">☰</span><span class="menu-toggle-label">Menu</span>
     </button>
     <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
-      <a href="/"{% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-      <a href="/about/" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
-      <a href="/education/" {% if page.url == '/education/' %}aria-current="page"{% endif %}>Education</a>
-      <a href="/programmes/" {% if page.url contains '/programmes/' %}aria-current="page"{% endif %}>Programmes</a>
-      <a href="/training/" {% if page.url contains '/training/' %}aria-current="page"{% endif %}>Training</a>
-      <a href="/consulting/" {% if page.url contains '/consulting/' %}aria-current="page"{% endif %}>Consulting</a>
-      <a href="/insights/" {% if page.url contains '/insights/' %}aria-current="page"{% endif %}>Insights</a>
-      <a href="/information/" {% if page.url contains '/information/' or page.url contains '/governance/' or page.url == '/admissions/' or page.url == '/fees-and-payment/' or page.url == '/scholarships/' or page.url == '/academic-regulations/' or page.url == '/student-support/' or page.url == '/research-support/' or page.url == '/faqs/' or page.url == '/events/' or page.url == '/accessibility/' or page.url == '/cookies/' %}aria-current="page"{% endif %}>Information</a>
-      <a href="/leadership/" {% if page.url == '/leadership/' %}aria-current="page"{% endif %}>Leadership</a>
-      <a class="nav-cta" href="/contact/" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>Contact us <span aria-hidden="true">↗</span></a>
+      <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <details class="nav-group{% if page.url contains '/about/' or page.url contains '/leadership/' %} is-current{% endif %}">
+        <summary>About</summary>
+        <div class="nav-dropdown">
+          <a href="/about/">About SUNKING GROUP</a>
+          <a href="/leadership/">Leadership</a>
+          <a href="/about/partners/">Partners and affiliations</a>
+          <a href="/about/recognition/">Recognition information</a>
+        </div>
+      </details>
+      <details class="nav-group{% if page.url contains '/education/' or page.url contains '/programmes/' or page.url == '/admissions/' or page.url == '/fees-and-payment/' or page.url == '/scholarships/' or page.url == '/academic-regulations/' or page.url == '/student-support/' or page.url == '/research-support/' %} is-current{% endif %}">
+        <summary>Education</summary>
+        <div class="nav-dropdown">
+          <a href="/education/">Education overview</a>
+          <a href="/programmes/">All programme pathways</a>
+          <a href="/programmes/ssbm-geneva/">SSBM Geneva programmes</a>
+          <a href="/admissions/">Admissions guidance</a>
+          <a href="/fees-and-payment/">Fees and payment</a>
+          <a href="/student-support/">Student support</a>
+        </div>
+      </details>
+      <details class="nav-group{% if page.url contains '/training/' or page.url contains '/consulting/' %} is-current{% endif %}">
+        <summary>Services</summary>
+        <div class="nav-dropdown">
+          <a href="/training/">Training and development</a>
+          <a href="/training/corporate-solutions/">Corporate training</a>
+          <a href="/consulting/">Consulting services</a>
+          <a href="/consulting/process/">How consulting works</a>
+        </div>
+      </details>
+      <details class="nav-group{% if page.url contains '/insights/' or page.url contains '/stories/' or page.url contains '/information/' or page.url contains '/governance/' or page.url == '/faqs/' or page.url == '/accessibility/' or page.url == '/cookies/' or page.url == '/events/' %} is-current{% endif %}">
+        <summary>Resources</summary>
+        <div class="nav-dropdown">
+          <a href="/insights/">Insights</a>
+          <a href="/stories/">Stories</a>
+          <a href="/information/">Information centre</a>
+          <a href="/faqs/">Frequently asked questions</a>
+          <a href="/governance/complaints/">Complaints and feedback</a>
+        </div>
+      </details>
+      <a class="nav-cta" href="/contact/" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>Contact</a>
     </nav>
   </div>
 </header>

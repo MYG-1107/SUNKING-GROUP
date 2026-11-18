@@ -1,34 +1,60 @@
 (function(){
   'use strict';
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('#primary-navigation');
+  const toggle=document.querySelector('.menu-toggle');
+  const nav=document.querySelector('#primary-navigation');
+  const groups=nav?Array.from(nav.querySelectorAll('.nav-group')):[];
+  function closeDropdowns(except){
+    groups.forEach(function(group){if(group!==except) group.removeAttribute('open');});
+  }
   function closeMenu(restoreFocus){
-    if(!toggle || !nav) return;
+    if(!toggle||!nav) return;
     nav.classList.remove('is-open');
+    closeDropdowns();
     toggle.setAttribute('aria-expanded','false');
     toggle.setAttribute('aria-label','Open navigation menu');
     toggle.innerHTML='<span aria-hidden="true">☰</span><span class="menu-toggle-label">Menu</span>';
     if(restoreFocus) toggle.focus();
   }
-  if(toggle && nav){
+  if(toggle&&nav){
     toggle.addEventListener('click',function(){
-      const open = nav.classList.toggle('is-open');
+      const open=nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded',String(open));
       toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
       toggle.innerHTML=open?'<span aria-hidden="true">✕</span><span class="menu-toggle-label">Close</span>':'<span aria-hidden="true">☰</span><span class="menu-toggle-label">Menu</span>';
       if(open){
-        const firstLink=nav.querySelector('a');
-        if(firstLink && window.matchMedia('(max-width: 1080px)').matches) firstLink.focus();
+        const firstLink=nav.querySelector(':scope > a, :scope > .nav-group > summary');
+        if(firstLink&&window.matchMedia('(max-width: 1080px)').matches) firstLink.focus();
+      } else {
+        closeDropdowns();
       }
     });
-    nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){closeMenu(false);});});
-    document.addEventListener('keydown',function(event){if(event.key==='Escape'&&nav.classList.contains('is-open')) closeMenu(true);});
-    document.addEventListener('click',function(event){if(nav.classList.contains('is-open')&&!nav.contains(event.target)&&!toggle.contains(event.target)) closeMenu(false);});
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){closeMenu(false);});
+    });
+    document.addEventListener('keydown',function(event){
+      if(event.key!=='Escape') return;
+      const openGroup=groups.slice().reverse().find(function(group){return group.hasAttribute('open');});
+      if(openGroup){
+        openGroup.removeAttribute('open');
+        const summary=openGroup.querySelector('summary');
+        if(summary) summary.focus();
+        return;
+      }
+      if(nav.classList.contains('is-open')) closeMenu(true);
+    });
+    document.addEventListener('click',function(event){
+      if(nav.classList.contains('is-open')&&!nav.contains(event.target)&&!toggle.contains(event.target)){
+        closeMenu(false);
+        return;
+      }
+      groups.forEach(function(group){
+        if(group.hasAttribute('open')&&!group.contains(event.target)) group.removeAttribute('open');
+      });
+    });
   }
   const year=document.querySelector('[data-year]');
   if(year) year.textContent=String(new Date().getFullYear());
 
-  // Contextual links preselect the enquiry category and request type.
   const params=new URLSearchParams(window.location.search);
   const form=document.querySelector('#contact-form');
   if(form){
@@ -56,7 +82,6 @@
     if(messageField&&intent==='consultation') messageField.placeholder='Briefly describe the decision or challenge you would like to discuss and the best way to contact you.';
     if(messageField&&intent==='registration') messageField.placeholder='Tell us the programme you are interested in, your previous qualification and preferred study format.';
     if(status&&intent==='consultation') status.textContent='This is a consultation request, not a confirmed appointment. The team can reply to arrange a suitable time.';
-
     form.addEventListener('submit',function(event){
       event.preventDefault();
       if(!form.reportValidity()) return;

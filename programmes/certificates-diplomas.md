@@ -52,3 +52,9 @@ Do not assume that a short-course certificate is equivalent to a regulated profe
 6. Register through the provider’s verified application or enrolment channel.
 
 The SUNKING GROUP team can help you identify the appropriate enquiry route. The programme provider remains responsible for admission, delivery and award decisions.
+
+## Certificates, diplomas and executive education at SSBM Geneva
+
+SSBM Geneva's public programme catalogue also includes certificates, diplomas and executive-education options. These are different from degree programmes and may have different learning hours, entry requirements, assessment and credentials. Check the exact course title and what the certificate or diploma represents before enrolling.
+
+Browse the [official SSBM programme finder](https://www.ssbm.ch/course-search/) and ask for the course specification, tuition, delivery format and cancellation terms. SUNKING GROUP is a Business Partner of SSBM Geneva; the institution controls registration, delivery and any credential it issues. See the [SSBM Geneva admissions guide](/programmes/ssbm-geneva/) for application links.

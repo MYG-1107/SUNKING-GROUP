@@ -52,3 +52,9 @@ The award itself does not guarantee career progression, salary changes or profes
 ## MBA and specialist management options
 
 The programme catalogue includes an online MBA overview and other management categories. Visit the [MBA programme summary](/programmes/lsmt-mba/) for the previously published LSMT listing. The institution and applicant should confirm current availability, eligibility and all programme conditions before an application is made.
+
+## SSBM Geneva master's and MBA options
+
+SSBM Geneva's catalogue includes master's and MBA programmes, with general and specialist study areas. The course title, available specialisation, study mode and entry requirements are programme-specific. Use the [official programme finder](https://www.ssbm.ch/course-search/) and request the current programme specification before deciding.
+
+SUNKING GROUP is a Business Partner of SSBM Geneva. The school decides admission, confirms the fee schedule and awards its qualifications. Applications are made through the [SSBM Student Application System](https://apply.ssbm.ch/). See the [SSBM Geneva programme and admissions guide](/programmes/ssbm-geneva/) for the current process and the questions to confirm.
